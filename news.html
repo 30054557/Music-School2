@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Melody Academy | News & Events</title>
+
+    <!-- Links this page to my external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================================
+         NAVIGATION BAR
+         Contains my website logo and links
+         to the other pages I have created
+    =================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <!-- My website logo, which links back to the homepage -->
+            <a href="index.html" class="logo">
+                Melody Academy<span>.</span>
+            </a>
+
+            <!-- Button for opening and closing the navigation menu on smaller screens -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation links to all five pages of my website -->
+            <ul class="nav-links" id="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="classes.html">Classes</a></li>
+
+                <!-- Highlights the page currently being viewed -->
+                <li><a href="news.html" class="active">News & Events</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+            <!-- Button for switching between light and dark mode -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==================================
+             PAGE INTRODUCTION
+             Introduces visitors to the latest
+             news and events at the academy
+        =================================== -->
+
+        <section class="news-intro">
+
+            <div class="news-intro-content">
+
+                <p class="eyebrow">LATEST UPDATES</p>
+
+                <h1>What's Happening at <span>Melody Academy?</span></h1>
+
+                <p>
+                    Keep up to date with our latest news, upcoming events
+                    and musical activities taking place at the academy.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             UPCOMING EVENTS
+             Displays events organised by
+             Melody Academy
+        =================================== -->
+
+        <section class="events-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SAVE THE DATE</p>
+
+                <h2>Upcoming Events</h2>
+
+                <p>
+                    Take a look at some of the exciting events
+                    we have coming up.
+                </p>
+
+            </div>
+
+
+            <!-- Container holding all three event cards -->
+            <div class="events-grid">
+
+
+                <!-- FIRST EVENT: STUDENT CONCERT -->
+                <div class="event-card">
+
+                    <!-- Image showing a student music performance -->
+                    <div class="event-image">
+
+                        <img src="Concert.jpg" alt="Students performing at a music concert">
+
+                    </div>
+
+                    <div class="event-content">
+
+                        <p class="event-date">15 December 2026</p>
+
+                        <h3>Annual Student Concert</h3>
+
+                        <p>
+                            Join us for an evening of musical performances
+                            from our talented students as they showcase
+                            everything they have learned.
+                        </p>
+
+                        <a href="contact.html" class="event-link">
+                            Find Out More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECOND EVENT: PIANO WORKSHOP -->
+                <div class="event-card">
+
+                    <!-- Image showing a piano and music lesson -->
+                    <div class="event-image">
+
+                        <img src="workshop.jpg" alt="Piano workshop taking place at Melody Academy">
+
+                    </div>
+
+                    <div class="event-content">
+
+                        <p class="event-date">20 December 2026 </p>
+
+                        <h3>Piano Workshop</h3>
+
+                        <p>
+                            An opportunity for students to further advance
+                            their skills with the piano every Saturday from December
+                            to March
+                        </p>
+
+                        <a href="contact.html" class="event-link">
+                            Find Out More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- THIRD EVENT: GROUP MUSIC SESSION -->
+                <div class="event-card">
+
+                    <!-- Image showing musicians playing together -->
+                    <div class="event-image">
+
+                        <img src="group.jpg" alt="Students playing musical instruments together">
+
+                    </div>
+
+                    <div class="event-content">
+
+                        <p class="event-date">8 January 2027</p>
+
+                        <h3>Group Music Session</h3>
+
+                        <p>
+                            Meet other students, practise together and
+                            enjoy making music as part of a group.
+                            All abilities are welcome.
+                        </p>
+
+                        <a href="contact.html" class="event-link">
+                            Find Out More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             LATEST NEWS
+             Shares recent announcements and
+             updates from the academy
+        =================================== -->
+
+        <section class="news-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">FROM THE ACADEMY</p>
+
+                <h2>Latest News</h2>
+
+                <p>
+                    Find out what's been happening at Melody Academy
+                    and read about some of our recent achievements.
+                </p>
+
+            </div>
+
+
+            <!-- FIRST NEWS ARTICLE -->
+            <div class="news-article">
+
+                <!-- Image of a Trophy -->
+                <div class="news-article-image">
+
+                    <img src="Achievement.jpg" alt="Trophy celebrating student achievements">
+
+                </div>
+
+                <div class="news-article-content">
+
+                    <p class="news-date">Academy News</p>
+
+                    <h3>Celebrating Our Students</h3>
+
+                    <p>
+                        We are proud of all our students and the progress
+                        they have made through their dedication and hard
+                        work. Congratulations to everyone on their
+                        achievements!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SECOND NEWS ARTICLE -->
+            <div class="news-article">
+
+                <!-- Image showing a music teacher helping a student-->
+                <div class="news-article-image">
+
+                    <img src="teacher.jpg" alt="Music teacher helping a student practise">
+
+                </div>
+
+                <div class="news-article-content">
+
+                    <p class="news-date">Academy Update</p>
+
+                    <h3>New Lessons Available</h3>
+
+                    <p>
+                        We are pleased to announce that additional lesson
+                        opportunities are now available for students
+                        interested in developing their musical abilities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- THIRD NEWS ARTICLE -->
+            <div class="news-article">
+
+                <!-- Image showing a group of musicians rehearsing -->
+                <div class="news-article-image">
+
+                    <img src="rehearsal.jpg" alt="Students practising music together">
+
+                </div>
+
+                <div class="news-article-content">
+
+                    <p class="news-date">Student Activities</p>
+
+                    <h3>Making Music Together</h3>
+
+                    <p>
+                        Our students have been enjoying opportunities
+                        to practise together, share their musical interests
+                        and learn from one another.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================
+         FOOTER
+         Contains my academy description
+         and additional navigation links
+    =================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- My academy's name and a short description -->
+            <div>
+
+                <h3>Melody Academy<span>.</span></h3>
+
+                <p>
+                    Inspiring musicians and creating opportunities
+                    through the power of music.
+                </p>
+
+            </div>
+
+
+            <!-- Extra links to the other pages of my website -->
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="classes.html">Classes</a></li>
+
+                    <li><a href="news.html">News & Events</a></li>
+
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Links my JavaScript file, which controls the mobile navigation menu -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+[
+    {
+        "instrument": "guitar",
+        "name": "Guitar Lessons",
+        "image": "Guitar.jpg",
+        "alt": "Acoustic guitar",
+        "description": "Learn everything from basic chords to more advanced playing techniques. Develop your skills and enjoy playing your favourite songs.",
+        "level": "Beginner to Advanced",
+        "duration": "45 minutes",
+        "price": "£20 per lesson"
+    },
+    {
+        "instrument": "piano",
+        "name": "Piano Lessons",
+        "image": "Piano.jpg",
+        "alt": "Grand piano",
+        "description": "Develop your understanding of music through piano lessons. Learn to read sheet music, improve your technique and play with confidence.",
+        "level": "Beginner to Advanced",
+        "duration": "45 minutes",
+        "price": "£22 per lesson"
+    },
+    {
+        "instrument": "violin",
+        "name": "Violin Lessons",
+        "image": "Violin.jpg",
+        "alt": "Violin",
+        "description": "Discover the violin and learn how to produce beautiful music. Build your confidence through lessons covering technique, rhythm and expression.",
+        "level": "Beginner to Advanced",
+        "duration": "45 minutes",
+        "price": "£22 per lesson"
+    },
+    {
+        "instrument": "drums",
+        "name": "Drum Lessons",
+        "image": "Drums.jpg",
+        "alt": "Drum kit in a music room",
+        "description": "Learn the fundamentals of drumming, including rhythm, timing and coordination. Develop your abilities and explore different musical styles.",
+        "level": "Beginner to Advanced",
+        "duration": "45 minutes",
+        "price": "£20 per lesson"
+    }
+]

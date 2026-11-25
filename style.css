@@ -1,0 +1,1439 @@
+/* ==========================================
+   GENERAL STYLING
+   Sets the default appearance of the website
+========================================== */
+
+/* I remove the browser's default spacing so the layout is easier to control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* I use Arial throughout and set the website's default colours here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    color: #263247;
+    line-height: 1.6;
+}
+
+/* This makes scrolling between sections feel a bit smoother */
+html {
+    scroll-behavior: smooth;
+}
+
+/* I remove the underline from links to keep the design tidy */
+a {
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   NAVIGATION BAR
+   Styles the website logo and navigation links
+========================================== */
+
+/* I give the navigation bar its dark navy background */
+header {
+    background-color: #101F3C;
+    width: 100%;
+}
+
+/* This keeps the logo and navigation links lined up */
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* I style the Melody Academy name here */
+.logo {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* I use gold here to keep the branding consistent */
+.logo span,
+.footer-content span {
+    color: #D6A84B;
+}
+
+/* This keeps the navigation links in a horizontal row */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* I set the appearance of the navigation links here */
+.nav-links a {
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+/* The links turn gold when someone hovers over them or opens that page */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #D6A84B;
+}
+
+/* I use this button for the mobile navigation menu
+   It is hidden on larger screens */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Button I use to switch between light and dark mode */
+.theme-toggle {
+    background: none;
+    border: 1px solid #D6A84B;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Adds a small hover effect to the theme button */
+.theme-toggle:hover {
+    background-color: #D6A84B;
+}
+
+
+/* ==========================================
+   WELCOME SECTION
+   Displays the main introduction at the top
+   of the Home Page
+========================================== */
+
+/* This is the main welcome area at the top of my Home page */
+.welcome-section {
+    min-height: 550px;
+
+    /* I use a solid navy background so the Home page matches the Classes page */
+    background-color: #101D35;
+
+    /* This keeps the welcome text centred vertically */
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+}
+
+/* I keep the welcome text within a set width and make it white */
+.welcome-content {
+    max-width: 700px;
+    color: #FFFFFF;
+}
+
+/* I use this style for the small introductory headings */
+.eyebrow {
+    color: #D6A84B;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* I set the size and spacing of the main welcome heading */
+.welcome-section h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* I highlight the word 'Musical' in gold */
+.welcome-section h1 span {
+    color: #D6A84B;
+}
+
+/* I set the size and spacing of the welcome paragraph */
+.welcome-content>p:not(.eyebrow) {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* This keeps the welcome buttons side by side when there is room */
+.welcome-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   BUTTONS
+   Provides consistent styling for website buttons
+========================================== */
+
+/* I use this as the base style for buttons across the website */
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* I use this for the main gold buttons */
+.btn-primary {
+    background-color: #D6A84B;
+    color: #101F3C;
+}
+
+/* The gold buttons get a little brighter when hovered over */
+.btn-primary:hover {
+    background-color: #E8BD69;
+    transform: translateY(-2px);
+}
+
+/* I use this for buttons with a white outline */
+.btn-outline {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* The outlined buttons switch to a white background when hovered over */
+.btn-outline:hover {
+    background-color: #FFFFFF;
+    color: #101F3C;
+}
+
+
+/* ==========================================
+   INTRODUCTION SECTION
+   Provides a short introduction to the academy
+========================================== */
+
+/* This centres the introduction and gives it some breathing room */
+.introduction {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* I limit the width so the introduction text stays easy to read */
+.section-heading {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* I set the appearance of the introduction heading */
+.section-heading h2 {
+    color: #101F3C;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* I keep the introduction paragraph a little softer than the heading */
+.section-heading>p:last-child {
+    color: #CBD5E1;
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   FEATURES SECTION
+   Displays three features of the music school
+========================================== */
+
+/* This lays out the three feature cards in a row */
+.features {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* I give each feature card its background, spacing and gold detail */
+.feature-card {
+    background-color: #F5F7FA;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 3px solid #D6A84B;
+    transition: transform 0.3s;
+}
+
+/* The card lifts slightly when someone moves their mouse over it */
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+/* I use gold for the musical symbols inside the cards */
+.feature-icon {
+    font-size: 42px;
+    color: #D6A84B;
+    margin-bottom: 15px;
+}
+
+/* I set the appearance of the feature card headings */
+.feature-card h3 {
+    color: #101F3C;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+/* I set a softer text colour for the card descriptions */
+.feature-card p {
+    color: #CBD5E1;
+}
+
+
+/* ==========================================
+   CALL TO ACTION SECTION
+   Encourages visitors to contact the academy
+========================================== */
+
+/* I use a navy background here and centre the content */
+.call-to-action {
+    background-color: #101F3C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* I set the size and spacing of this heading */
+.call-to-action h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* I style the short paragraph underneath the heading */
+.call-to-action p {
+    margin-bottom: 25px;
+    color: #DCE2ED;
+}
+
+
+/* ==========================================
+   FOOTER
+   This is the footer at the bottom of each page
+========================================== */
+
+/* I use a darker navy for the footer so it stands apart from the page */
+footer {
+    background-color: #0B162B;
+    color: #FFFFFF;
+    padding: 50px 10% 20px;
+}
+
+/* This keeps the footer information in two columns */
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+/* I set the appearance of the academy name in the footer */
+.footer-content h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* I use gold to make the Quick Links heading stand out */
+.footer-content h4 {
+    color: #D6A84B;
+    margin-bottom: 15px;
+}
+
+/* I keep the footer description within a readable width */
+.footer-content p {
+    color: #B9C2D1;
+    max-width: 400px;
+}
+
+/* I remove the bullets from the footer links */
+.footer-content ul {
+    list-style: none;
+}
+
+/* This adds a little space between each footer link */
+.footer-content li {
+    margin-bottom: 8px;
+}
+
+/* I set the normal colour and hover transition for footer links */
+.footer-content a {
+    color: #B9C2D1;
+    transition: color 0.3s;
+}
+
+/* Footer links turn gold when someone hovers over them */
+.footer-content a:hover {
+    color: #D6A84B;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   Adjusts the website for smaller screens
+   such as tablets and mobile phones
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* This lets the navigation items wrap on smaller screens */
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* I show the menu button on smaller screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* The links stay hidden until the mobile menu is opened */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    /* JavaScript adds the show class when the menu is opened */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* I reduce the welcome section spacing for smaller screens */
+    .welcome-section {
+        min-height: 480px;
+        padding: 50px 25px;
+    }
+
+    /* I make the welcome heading smaller so it fits better on phones */
+    .welcome-section h1 {
+        font-size: 38px;
+    }
+
+    /* The feature cards stack vertically on smaller screens */
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    /* The footer columns stack on top of each other on smaller screens */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* I make the introduction heading smaller on mobile */
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    /* I make the call to action heading smaller on mobile */
+    .call-to-action h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* ==========================================
+   ABOUT US PAGE
+   Styles the different sections of my
+   About Us page
+========================================== */
+
+
+/* ==========================================
+   ABOUT PAGE INTRODUCTION
+   Displays the page title and introduction
+========================================== */
+
+.about-intro {
+    background-color: #101D35;
+    color: #FFFFFF;
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.about-intro-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styles the main About Us heading */
+.about-intro h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+/* Highlights the academy name in gold */
+.about-intro h1 span {
+    color: #D6A84B;
+}
+
+/* Styles the introductory paragraph */
+.about-intro-content>p:last-child {
+    font-size: 18px;
+    color: #DCE2ED;
+}
+
+
+/* ==========================================
+   OUR STORY SECTION
+   This places the story text beside its image or video
+========================================== */
+
+.our-story {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* I set the size and colour of the story heading */
+.story-content h2 {
+    color: #101F3C;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* This gives the story paragraphs some space between them */
+.story-content p:not(.eyebrow) {
+    color: #CBD5E1;
+    margin-bottom: 15px;
+}
+
+/* I use this to size the story image if one is used */
+.story-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   OUR MISSION SECTION
+   This section gives the academy's mission statement its own space
+========================================== */
+
+.mission {
+    background-color: #F5F7FA;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* I keep the mission text within a comfortable reading width */
+.mission-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* I set the appearance of the mission heading */
+.mission-content h2 {
+    color: #101F3C;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* I set the size and spacing of the mission paragraphs */
+.mission-content p:not(.eyebrow) {
+    color: #CBD5E1;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   OUR VALUES SECTION
+   This section displays the three values I chose for the academy
+========================================== */
+
+.our-values {
+    padding: 80px 30px;
+}
+
+/* This centres the heading and short introduction above the cards */
+.values-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+/* I set the appearance of the core values heading */
+.values-heading h2 {
+    color: #101F3C;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+/* I style the short paragraph underneath the heading */
+.values-heading>p:last-child {
+    color: #CBD5E1;
+    font-size: 17px;
+}
+
+/* This lays out the three value cards in a row */
+.values-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* I give each value card its background, spacing and gold detail */
+.value-card {
+    background-color: #F5F7FA;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 3px solid #D6A84B;
+    transition: transform 0.3s;
+}
+
+/* The value card lifts slightly when someone hovers over it */
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+/* I use gold for the decorative musical symbols */
+.value-icon {
+    color: #D6A84B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+/* I set the appearance of the value headings */
+.value-card h3 {
+    color: #101F3C;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+/* I set the text colour for the value descriptions */
+.value-card p {
+    color: #CBD5E1;
+}
+
+
+/* ==========================================
+   ABOUT PAGE CALL TO ACTION
+   This section gives visitors a link to explore my classes
+========================================== */
+
+.about-cta {
+    background-color: #101F3C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* I set the size and spacing of this heading */
+.about-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* I style the short paragraph underneath the heading */
+.about-cta p {
+    color: #DCE2ED;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   ABOUT PAGE RESPONSIVE DESIGN
+   I make a few layout changes so the page works better on smaller screens
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* I make the page heading smaller on mobile */
+    .about-intro h1 {
+        font-size: 34px;
+    }
+
+    /* The story text and image stack vertically on smaller screens */
+    .our-story {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* I reduce the image height so it fits better on a phone */
+    .story-image img {
+        height: 280px;
+    }
+
+    /* The value cards stack vertically on smaller screens */
+    .values-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* I reduce the mission heading size for mobile */
+    .mission-content h2 {
+        font-size: 28px;
+    }
+
+    /* I reduce the call to action heading size for mobile */
+    .about-cta h2 {
+        font-size: 26px;
+    }
+
+}
+
+/* I use this to size the video in my About Us section */
+.story-video video {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* ==================================
+   CLASSES PAGE
+   Styles the introduction and
+   class cards on my Classes page
+================================== */
+
+/* This is the introduction banner at the top of my Classes page */
+.classes-intro {
+    background-color: #101d35;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.classes-intro-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.classes-intro h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.classes-intro h1 span {
+    color: #d6ad55;
+}
+
+.classes-intro-content > p:last-child {
+    color: #dce2eb;
+    line-height: 1.7;
+}
+
+/* This section holds the class cards */
+.classes-section {
+    padding: 80px 8%;
+    background-color: #f8f9fb;
+}
+
+/* This lays out the class cards and lets them stack on smaller screens */
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+
+/* I give each class card its own white background and rounded corners */
+.class-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The card lifts slightly when someone moves their mouse over it */
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* I keep the class images the same size across the cards */
+.class-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* This controls the spacing inside each class card */
+.class-content {
+    padding: 25px;
+}
+
+.class-content h3 {
+    color: #101d35;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.class-content>p {
+    color: #CBD5E1;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* I group the level, duration and price details together here */
+.class-details {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.class-details p {
+    color: #CBD5E1;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.class-details strong {
+    color: #101d35;
+}
+
+
+/* This keeps the button text aligned neatly inside the card */
+.class-content .btn {
+    text-align: center;
+}
+
+
+/* This section explains who can join my classes */
+.who-can-join {
+    padding: 70px 8%;
+    background-color: white;
+}
+
+
+/* I adjust the class layout for smaller screens */
+@media (max-width: 768px) {
+
+    .classes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .classes-intro h1 {
+        font-size: 32px;
+    }
+
+    .classes-section {
+        padding: 60px 6%;
+    }
+
+    .class-image img {
+        height: 220px;
+    }
+
+}
+
+
+/* ==================================
+   NEWS & EVENTS PAGE
+   Styles the news and events
+   sections of my website
+================================== */
+
+
+/* ==================================
+   PAGE INTRODUCTION
+   The introduction banner at the top of my
+   News & Events page
+================================== */
+
+.news-intro {
+    background-color: #101d35;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.news-intro-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.news-intro h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.news-intro h1 span {
+    color: #d6ad55;
+}
+
+.news-intro-content>p:last-child {
+    color: #dce2eb;
+    line-height: 1.7;
+}
+
+
+/* ==================================
+   UPCOMING EVENTS
+   Displays my event cards in a
+   responsive grid layout
+================================== */
+
+.events-section {
+    padding: 80px 8%;
+    background-color: #f8f9fb;
+}
+
+/* This lays out the event cards in three columns */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: 40px auto 0;
+}
+
+
+/* I give each event card its own background and spacing */
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The card lifts slightly when someone moves their mouse over it */
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* I keep the event images consistent across the cards */
+.event-image img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* This controls the spacing around the event details */
+.event-content {
+    padding: 22px;
+}
+
+.event-date {
+    color: #b28a37;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-content h3 {
+    color: #101d35;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.event-content>p:not(.event-date) {
+    color: #CBD5E1;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* This styles the link visitors can use to find out more about an event */
+.event-link {
+    color: #b28a37;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.event-link:hover {
+    color: #101d35;
+}
+
+
+/* ==================================
+   LATEST NEWS
+   Displays my announcements and
+   updates from my music academy
+================================== */
+
+.news-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+
+/* Individual news article layout */
+.news-article {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Image displayed beside each news article */
+.news-article-image {
+    flex: 0 0 280px;
+}
+
+.news-article-image img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Text content beside the news images */
+.news-article-content {
+    flex: 1;
+}
+
+.news-date {
+    color: #b28a37;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-article-content h3 {
+    color: #101d35;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.news-article-content>p:last-child {
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+
+/* ==================================
+   MOBILE RESPONSIVENESS
+   I adjust the layout for smaller
+   screens such as phones and tablets
+================================== */
+
+@media (max-width: 900px) {
+
+    /* I change the event cards to two columns on medium-sized screens */
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* I make the news heading smaller on mobile */
+    .news-intro h1 {
+        font-size: 32px;
+    }
+
+    /* The event cards stack into one column on smaller screens */
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* The news images move above their text on smaller screens */
+    .news-article {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .news-article-image {
+        flex: none;
+    }
+
+    .news-article-image img {
+        height: 220px;
+    }
+
+    .events-section,
+    .news-section {
+        padding: 60px 6%;
+    }
+
+}
+
+
+/* ==================================
+   CONTACT US PAGE
+   Styles the contact information
+   and enquiry form
+================================== */
+
+
+
+/* ==================================
+   PAGE INTRODUCTION
+   Introduction banner displayed at the top
+   of my Contact Us page
+================================== */
+
+.contact-intro {
+    background-color: #101d35;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.contact-intro-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-intro h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-intro h1 span {
+    color: #d6ad55;
+}
+
+.contact-intro-content>p:last-child {
+    color: #dce2eb;
+    line-height: 1.7;
+}
+
+
+
+/* ==================================
+   CONTACT SECTION
+   Holds my contact details and
+   the enquiry form
+================================== */
+
+.contact-section {
+    padding: 80px 8%;
+    background-color: #f8f9fb;
+}
+
+/* This places the contact details beside the enquiry form */
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    align-items: start;
+}
+
+
+/* ==================================
+   CONTACT INFORMATION
+   Styles my academy's
+   contact details
+================================== */
+
+.contact-information {
+    background-color: #101d35;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.contact-information h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-information>p {
+    color: #dce2eb;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    border-top: 1px solid #35445c;
+    padding: 20px 0;
+}
+
+.contact-detail h4 {
+    color: #d6ad55;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #dce2eb;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* ==================================
+   ENQUIRY FORM
+   Styling for the form visitors
+   use to contact the academy
+================================== */
+
+.contact-form-container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-container h3 {
+    color: #101d35;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.contact-form-container>p {
+    color: #CBD5E1;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* Spacing between each form field */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #101d35;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+
+/* I give the text fields, dropdowns and message box a matching style */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5d9e0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+}
+
+/* Visitors can make the message box taller if they need more space */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* I highlight a field when someone selects it */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #b28a37;
+    box-shadow: 0 0 0 2px rgba(178, 138, 55, 0.15);
+}
+
+
+/* I make the submit button fill the width of the form */
+.contact-form-container button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* This is where I display a message after the form is submitted */
+#form-response {
+    margin-top: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* ==================================
+   MOBILE RESPONSIVENESS
+   Adjusts the contact layout for
+   smaller screens
+================================== */
+
+@media (max-width: 768px) {
+
+    .contact-intro h1 {
+        font-size: 32px;
+    }
+
+    /* The contact details and form stack vertically on smaller screens */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 60px 6%;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px;
+    }
+
+}
+
+
+/* Search options above my class cards */
+.class-search {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    gap: 15px;
+}
+
+/* Search box and instrument dropdown */
+.class-search input,
+.class-search select {
+    padding: 13px 15px;
+    border: 1px solid #d5d9e0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+/* Give the search box more room */
+.class-search input {
+    flex: 1;
+}
+
+/* Keep the dropdown a sensible width */
+.class-search select {
+    width: 220px;
+}
+
+/* Stack the search options on smaller screens */
+@media (max-width: 600px) {
+    .class-search {
+        flex-direction: column;
+    }
+
+    .class-search select {
+        width: 100%;
+    }
+}
+
+
+/* ==================================
+   DARK MODE
+   Changes pages to a darker theme
+   when clicking the dark mode button
+================================== */
+/* Theme button for switching between light and dark mode */
+
+.theme-toggle:hover {
+    background-color: #D6A84B;
+}
+
+
+/* Dark mode colours for the website */
+body.dark-mode {
+    background-color: #101D35;
+    color: #E2E8F0;
+}
+
+/* Dark backgrounds for the main content areas */
+body.dark-mode .introduction,
+body.dark-mode .features,
+body.dark-mode .our-story,
+body.dark-mode .mission,
+body.dark-mode .our-values,
+body.dark-mode .classes-section,
+body.dark-mode .who-can-join,
+body.dark-mode .events-section,
+body.dark-mode .news-section,
+body.dark-mode .contact-section,
+body.dark-mode .mission-content {
+    background-color: #101D35;
+    color: #E2E8F0;
+}
+
+/* Dark backgrounds for cards */
+body.dark-mode .feature-card,
+body.dark-mode .value-card,
+body.dark-mode .class-card,
+body.dark-mode .event-card,
+body.dark-mode .news-article,
+body.dark-mode .contact-form-container {
+    
+    background-color: #1B2A44;
+    color: #E2E8F0;
+}
+
+/* Make headings easier to read in dark mode */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .section-heading,
+body.dark-mode .story-content h2,
+body.dark-mode .mission-content h2,
+body.dark-mode .values-heading h2,
+body.dark-mode .class-content h3,
+body.dark-mode .event-content h3,
+body.dark-mode .news-article-content h3,
+body.dark-mode .contact-form-container h3 {
+    color: #FFFFFF;
+}
+
+/* Make paragraphs and descriptions readable */
+body.dark-mode p,
+body.dark-mode .class-details p,
+body.dark-mode label,
+body.dark-mode .class-details strong {
+    color: #CBD5E1;
+}
+
+/* Dark styling for form fields */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #101D35;
+    color: #FFFFFF;
+    border-color: #52627A;
+}
+
+/* Placeholder text in dark mode */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #A0AEC0;
+}

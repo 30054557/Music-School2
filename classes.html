@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Melody Academy | Classes</title>
+
+    <!-- Links this page to my external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================================
+         NAVIGATION BAR
+         Contains my website logo and links
+         to the other pages I have created
+    =================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <!-- My website logo, which links back to the homepage -->
+            <a href="index.html" class="logo">
+                Melody Academy<span>.</span>
+            </a>
+
+            <!-- Button for opening and closing the navigation menu on smaller screens -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation links to all five pages of my website -->
+            <ul class="nav-links" id="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <!-- The active class highlights the page currently being viewed -->
+                <li><a href="classes.html" class="active">Classes</a></li>
+
+                <li><a href="news.html">News & Events</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+            <!-- Button for switching between light and dark mode -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==================================
+             PAGE INTRODUCTION
+             Introduces visitors to the classes
+             available at Melody Academy
+        =================================== -->
+
+        <section class="classes-intro">
+
+            <div class="classes-intro-content">
+                <p class="eyebrow">WHAT WE OFFER</p>
+
+                <h1>Find Your Perfect <span>Class</span></h1>
+
+                <p>
+                    Whether you're learning an instrument for the first time
+                    or looking to improve your existing skills, Melody Academy
+                    has a class to help you along your musical journey.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             AVAILABLE CLASSES
+             Displays the different instruments
+             students can learn at my academy
+        =================================== -->
+
+        <section class="classes-section">
+
+
+            <!-- Search and filter options for my classes -->
+            <div class="class-search">
+
+                <label for="classSearch">Search classes:</label>
+
+                <input type="text" id="classSearch" placeholder="Search for a class...">
+
+                <label for="instrumentFilter">Filter by instrument:</label>
+
+                <select id="instrumentFilter">
+                    <option value="all">All Instruments</option>
+                    <option value="guitar">Guitar</option>
+                    <option value="piano">Piano</option>
+                    <option value="violin">Violin</option>
+                    <option value="drums">Drums</option>
+                </select>
+
+            </div>
+
+
+            <div class="section-heading">
+
+                <p class="eyebrow">EXPLORE OUR LESSONS</p>
+
+                <h2>Our Music Classes</h2>
+
+                <p>
+                    Take a look at the classes we currently offer and find
+                    the right instrument for you.
+                </p>
+
+            </div>
+
+
+            <!-- Javascript loads my class cards via the JSON File -->
+            <div class="classes-grid"></div>
+
+        </section>
+
+
+        <!-- ==================================
+             WHO CAN JOIN?
+             Explains who the lessons are
+             suitable for
+        =================================== -->
+
+        <section class="who-can-join">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">EVERYONE IS WELCOME</p>
+
+                <h2>Who Can Join?</h2>
+
+                <p>
+                    Our classes are designed to welcome students with
+                    different levels of musical experience. Whether you're
+                    just starting out or already have experience, there's
+                    always something new to learn.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================
+         FOOTER
+         Contains my academy description
+         and additional navigation links
+    =================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- My academy's name and a short description -->
+            <div>
+
+                <h3>Melody Academy<span>.</span></h3>
+
+                <p>
+                    Inspiring musicians and creating opportunities
+                    through the power of music.
+                </p>
+
+            </div>
+
+
+            <!-- Extra links to the other pages of my website -->
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="classes.html">Classes</a></li>
+
+                    <li><a href="news.html">News & Events</a></li>
+
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Links my JavaScript file, which controls the mobile navigation menu -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
